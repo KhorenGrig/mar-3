@@ -8,7 +8,7 @@
 
 f();
 
-const f = function(){
+function f(){
   console.log('I am being hoisted, YAY!');
 }
 
@@ -18,4 +18,4 @@ const f = function(){
 
 
 console.log(t);
-let t = 5;
+var t = 5;

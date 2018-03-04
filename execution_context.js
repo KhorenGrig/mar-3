@@ -1,36 +1,34 @@
-this.name = 'THIS IS THE GLOBAL OBJECT';
+// this.name = 'THIS IS THE GLOBAL OBJECT';
 
-const obj = {
-  name: 'a',
-  age: 14
-};
+// const obj = {
+//   name: 'a',
+//   age: 14
+// };
 
-const f = () => {
-  console.log(this.name);
-};
+// const f = function(){
+//   console.log(`${this.name}`);
+// };
 
-// f();
+// f.call(obj);
+// f.apply(obj);
+
 
 // uncomment the function call
 // run the program, see the result
 // change the program in a way that the logged tesult will be 'a'
 // do the same thing in 2 ways, see the examples in class.js
 
+// const another_obj = {
+//   n1: 56,
+//   n2: 12
+// };
 
+// const func = function (n) {
+//   console.log((this.n1 + this.n2) * 4);
+// }
 
-
-
-
-const another_obj = {
-  n1: 56,
-  n2: 12
-};
-
-const func = function(n){
-  console.log((this.n1 + this.n2)*n);
-}
-
-// func(4);
+// func.call(another_obj,4);
+// func.apply(another_obj,[4]);
 
 // uncomment the function call
 // run the program, see the result
